@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    app:cardBackgroundColor="#FFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/most_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/macdss"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/most_title"
+            android:layout_height="wrap_content"
+            android:text="McDonalds' flagship"
+            android:fontFamily="@font/bold"
+            android:layout_toRightOf="@id/most_image"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorFont2"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/most_ratingbar"
+            android:progressTint="@color/colorFont2"
+            android:layout_below="@id/most_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/most_image"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:rating="4"/>
+
+        <TextView
+            android:layout_below="@id/most_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/most_image"
+            android:id="@+id/most_description"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/colorFont2"
+            android:text="spacex spacex spacex spacex spacex spacex spacex spacex spacex"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

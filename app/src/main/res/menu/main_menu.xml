@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:iconTint="@color/colorFont2"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black"
+            android:iconTint="@color/colorFont2"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:iconTint="@color/colorFont2"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_add_missing_places"
+            android:icon="@drawable/ic_add_location_black_24dp"
+            android:iconTint="@color/colorFont2"
+            android:title="Add Missing Places" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_login"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_account_box_black_24dp"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/ic_star_half_black_24dp"
+                    android:title="Rate Us" />
+
+
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

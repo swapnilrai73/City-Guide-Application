@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark2"
+    android:layout_height="match_parent"
+    tools:context=".User.AllCategories">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_white" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_search_white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorFont"
+            android:fontFamily="@font/bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#add8e6"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurants"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorFont"
+                    android:fontFamily="@font/bold"
+                    android:padding="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand All"
+                    android:textColor="@color/colorFont"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cat_restaurant"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#ffdc9d"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorFont"
+                    android:fontFamily="@font/bold"
+                    android:padding="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand All"
+                    android:textColor="@color/colorFont"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cat_hotels"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#a1f1a1"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shops"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorFont"
+                    android:fontFamily="@font/bold"
+                    android:padding="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand All"
+                    android:textColor="@color/colorFont"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cat_shops"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#add8e6"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurants"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorFont"
+                    android:fontFamily="@font/bold"
+                    android:padding="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand All"
+                    android:textColor="@color/colorFont"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cat_restaurant"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#ffdc9d"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorFont"
+                    android:fontFamily="@font/bold"
+                    android:padding="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand All"
+                    android:textColor="@color/colorFont"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cat_hotels"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#a1f1a1"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shops"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorFont"
+                    android:fontFamily="@font/bold"
+                    android:padding="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand All"
+                    android:textColor="@color/colorFont"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:layout_height="130dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cat_shops"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
